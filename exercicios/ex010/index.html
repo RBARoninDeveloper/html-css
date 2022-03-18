@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external"> repositório público no Github</a></p>
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external"> canal gratuíto no YouTube.</a></p>
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também, a minha <a href="pag002.html" target="_self" rel="next">segunda página</a></p>
+    <p>Você também pode acessar a nossa página de <a href="noticias/pag003.html" target="_self" rel="next">notícias</a>.
+    </p>
+    <!-- rel="next"  - informa ao navegador que a página se refere a outra página em outra guia-->
+    <!-- rel="prev"  - informa ao navegador que a página se refere à página anterior-->
+    <!-- rel="follow" -->
+    <!-- nofollow-->  
+    <!-- target="_blank"-->
+    <!-- target="_self" - informa ao navegador que a página a ser aberta sobrescreverá a página atual-->  
+
+    <h1>Links para downloads</h1>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/meulivro.rar" download="meulivro.rar" type="application/rar">Livro compactado em .RAR</a></li>
+    </ul>
+</body>
+</html>
