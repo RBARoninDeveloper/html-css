@@ -21,9 +21,24 @@
            
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot{
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
         }
 
         td.num {
@@ -31,7 +46,7 @@
         }
 
         td.estado {
-            text-align: center;
+            text-align: left;
         }
 
     </style>
@@ -52,127 +67,126 @@
             <caption>População das Unidades Federativas</caption>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
                 </tr>
             </thead>
-            <tfoot>
-                <tr>
-                    <th>Total de Habitantes</th>
-                    <td class="num"><strong>210.147.125</strong></td>
-                </tr>
-            </tfoot>
             <tbody>
                 <tr>
                     <td class="estado">São Paulo</td>
-                    <td class="num">41 262 199</td>
+                    <td class="num">41.262.199</td>
                 </tr>
                 <tr>
                     <td class="estado">Minas Gerais</td>
-                    <td class="num">19 597 330</td>
+                    <td class="num">19.597.330</td>
                 </tr>
                 <tr>
                     <td class="estado">Rio de Janeiro</td>
-                    <td class="num">15 989 929</td>
+                    <td class="num">15.989.929</td>
                 </tr>
                 <tr>
                     <td class="estado">Bahia</td>
-                    <td class="num">14 016 906</td>
+                    <td class="num">14.016.906</td>
                 </tr>
                 <tr>
                     <td class="estado">Paraná</td>
-                    <td class="num">10 444 526</td>
+                    <td class="num">10.444.526</td>
                 </tr>
                 <tr>
                     <td class="estado">Rio Grande do Sul</td>
-                    <td class="num">11 466 630</td>
+                    <td class="num">11.466.630</td>
                 </tr>
                 <tr>
                     <td class="estado">Pernanbuco</td>
-                    <td class="num">9 674 793</td>
+                    <td class="num">9.674.793</td>
                 </tr>
                 <tr>
                     <td class="estado">Ceará</td>
-                    <td class="num">9 240 580</td>
+                    <td class="num">9.240.580</td>
                 </tr>
                 <tr>
-                    <td>Pará</td>
-                    <td class="num">8 777 124</td>
+                    <td class="estado">Pará</td>
+                    <td class="num">8.777.124</td>
                 </tr>
                 <tr>
-                    <td>Santa Catarina</td>
-                    <td class="num">7 338 473</td>
+                    <td class="estado">Santa Catarina</td>
+                    <td class="num">7.338.473</td>
                 </tr>
                 <tr>
-                    <td>Goiás</td>
-                    <td class="num">7 206 589</td>
+                    <td class="estado">Goiás</td>
+                    <td class="num">7.206.589</td>
                 </tr>
                 <tr>
-                    <td>Maranhão</td>
-                    <td class="num">7 153 262</td>
+                    <td class="estado">Maranhão</td>
+                    <td class="num">7.153.262</td>
                 </tr>
                 <tr>
-                    <td>Amazonas</td>
-                    <td class="num">4 269 995</td>
+                    <td class="estado">Amazonas</td>
+                    <td class="num">4.269.995</td>
                 </tr>
                 <tr>
-                    <td>Espírito Santo</td>
-                    <td class="num">4 108 508</td>
+                    <td class="estado">Espírito Santo</td>
+                    <td class="num">4.108.508</td>
                 </tr>
                 <tr>
-                    <td>Paraíba</td>
-                    <td class="num">4 059 905</td>
+                    <td class="estado">Paraíba</td>
+                    <td class="num">4.059.905</td>
                 </tr>
                 <tr>
-                    <td>Mato Grosso</td>
-                    <td class="num">3 567 234</td>
+                    <td class="estado">Mato Grosso</td>
+                    <td class="num">3.567.234</td>
                 </tr>
                 <tr>
-                    <td>Rio Grande do Norte</td>
-                    <td class="num">3 560 903</td>
+                    <td class="estado">Rio Grande do Norte</td>
+                    <td class="num">3.560.903</td>
                 </tr>
                 <tr>
-                    <td>Alagoas</td>
-                    <td class="num">3 365 351</td>
+                    <td class="estado">Alagoas</td>
+                    <td class="num">3.365.351</td>
                 </tr>
                 <tr>
-                    <td>Piauí</td>
-                    <td class="num">3 289 290</td>
+                    <td class="estado">Piauí</td>
+                    <td class="num">3.289.290</td>
                 </tr>
                 <tr>
-                    <td>Distrito Federal</td>
-                    <td class="num">3 094 325</td>
+                    <td class="estado">Distrito Federal</td>
+                    <td class="num">3.094.325</td>
                 </tr>
                 <tr>
-                    <td>Mato Grosso do Sul</td>
-                    <td class="num">2 839 188</td>
+                    <td class="estado">Mato Grosso do Sul</td>
+                    <td class="num">2.839.188</td>
                 </tr>
                 <tr>
-                    <td>Sergipe</td>
-                    <td class="num">2 338 474</td>
+                    <td class="estado">Sergipe</td>
+                    <td class="num">2.338.474</td>
                 </tr>
                 <tr>
-                    <td>Rondônia</td>
-                    <td class="num">1 815 278</td>
+                    <td class="estado">Rondônia</td>
+                    <td class="num">1.815.278</td>
                 </tr>
                 <tr>
-                    <td>Tocantins</td>
-                    <td class="num">1 607 363</td>
+                    <td class="estado">Tocantins</td>
+                    <td class="num">1.607.363</td>
                 </tr>
                 <tr>
-                    <td>Acre</td>
-                    <td class="num">906 876</td>
+                    <td class="estado">Acre</td>
+                    <td class="num">906.876</td>
                 </tr>
                 <tr>
-                    <td>Amapá</td>
-                    <td class="num">877 613</td>
+                    <td class="estado">Amapá</td>
+                    <td class="num">877.613</td>
                 </tr>
                 <tr>
-                    <td>Roraima</td>
-                    <td class="num">652 713</td>
+                    <td class="estado">Roraima</td>
+                    <td class="num">652.713</td>
                 </tr>
             </tbody>
-         
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de Habitantes</th>
+                    <td class="num"><strong>166.668.507</strong></td>
+                </tr>
+            </tfoot>
         </table>
 </body>
 </html>
